@@ -7,7 +7,10 @@ void main() {
 void test() {
   const String? firstName = null;
   const String? middleName = 'Bar';
-  const String? lastName = "Baz";
+  const String? lastName = 'Baz';
+
+  const firstNonNullAbleValue = firstName ?? middleName ?? lastName;
+  print(firstNonNullAbleValue);
 }
 
 class MyApp extends StatelessWidget {
