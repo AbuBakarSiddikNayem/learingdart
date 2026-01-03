@@ -5,7 +5,9 @@ void main() {
 }
 
 void test() {
-  ['Ayanokoji', 'Kiyotaka', 'Nayem'];
+  final names = {'Ayanokoji', 'Kiyotaka', 'Nayem'};
+  names.add('Ayanokoji');
+  print(names);
 }
 
 class MyApp extends StatelessWidget {
