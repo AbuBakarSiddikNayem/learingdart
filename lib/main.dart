@@ -4,7 +4,11 @@ void main() {
   runApp(const MyApp());
 }
 
-void test() {}
+void test() {
+  const String? firstName = null;
+  const String? middleName = 'Bar';
+  const String? lastName = "Baz";
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
