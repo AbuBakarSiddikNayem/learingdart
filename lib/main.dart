@@ -4,11 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
-void test() {
-  final names = {'Ayanokoji', 'Kiyotaka', 'Nayem'};
-  names.add('Ayanokoji');
-  print(names);
-}
+void test() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
