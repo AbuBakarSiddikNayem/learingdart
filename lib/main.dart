@@ -4,17 +4,14 @@ void main() {
   runApp(const MyApp());
 }
 
-void test(String? firstName, String? middleName, String? lastName) {
-  final firstNonNullValue = firstName ?? middleName ?? lastName;
-  print(firstNonNullValue);
-}
+void test() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    test(null, "F.", "Doe");
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
