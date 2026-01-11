@@ -4,7 +4,13 @@ void main() {
   runApp(const MyApp());
 }
 
-void test() {}
+enum PersonProperty { firstName, lastName, age }
+
+void test() {
+  PersonProperty.firstName;
+  PersonProperty.lastName;
+  PersonProperty.age;
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
