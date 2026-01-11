@@ -4,12 +4,20 @@ void main() {
   runApp(const MyApp());
 }
 
-enum PersonProperty { firstName, lastName, age }
+enum AnimalType { cat, dog, bunny }
 
-void test() {
-  PersonProperty.firstName;
-  PersonProperty.lastName;
-  PersonProperty.age;
+void test(AnimalType animalType) {
+  switch (animalType) {
+    case AnimalType.cat:
+      print('cat');
+      break;
+    case AnimalType.dog:
+      print('dog');
+      break;
+    case AnimalType.bunny:
+      print('bunny');
+      break;
+  }
 }
 
 class MyApp extends StatelessWidget {
@@ -17,7 +25,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    test();
+    test(AnimalType.cat);
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
