@@ -5,9 +5,8 @@ void main() {
 }
 
 void test(String? firstName, String? middleName, String? lastName) {
-  String? name = firstName;
-  name ??= firstName;
-  print(name);
+  final firstNonNullValue = firstName ?? middleName ?? lastName;
+  print(firstNonNullValue);
 }
 
 class MyApp extends StatelessWidget {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    test(null, null, null);
+    test(null, "F.", "Doe");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
