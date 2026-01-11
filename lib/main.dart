@@ -4,28 +4,14 @@ void main() {
   runApp(const MyApp());
 }
 
-enum AnimalType { cat, dog, bunny }
-
-void test(AnimalType animalType) {
-  switch (animalType) {
-    case AnimalType.cat:
-      print('cat');
-      break;
-    case AnimalType.dog:
-      print('dog');
-      break;
-    case AnimalType.bunny:
-      print('bunny');
-      break;
-  }
-}
+void test() {}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    test(AnimalType.cat);
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
